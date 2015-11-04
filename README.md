@@ -2,6 +2,11 @@
 
 A shopping basket implemented in HTML and JavaScript.
 
+1. run npm install
+2. run grunt
+3. view page at target/index.html
+4. view test runner at tests/SpecRunner.html
+
 General requirements and considerations
 
 Accessibility:  Ensure that your mark-up takes into account basic accessibility standards. For example, ensure form fields are accessible; that the page can be viewed and used without the need for JavaScript to be enabled and any alt attributes and similar are set. You will not be expected to write or connect up any server-side code for this exercise, merely to show your understanding of how such a page might work without JavaScript. Please also consider page weight when saving images. 
