@@ -1,0 +1,339 @@
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #000;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    background: #fbfbfb;
+    color: #000;
+    font-family: 'Droid Serif', serif;
+    padding-bottom: 6em;
+    padding-right:3em;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* headings */
+
+h1 {
+    font-weight: 700; 
+    text-shadow: 1px 2px #c6c6c6;
+    font-size: 1.8em;
+    margin: 0.4em 0;
+
+    &.logo {
+        background:url('../img/logo.png') transparent no-repeat;
+        height:70px;
+        width:208px;
+        text-indent:-2000px;
+        margin-bottom: 1.575em;
+    }
+}
+
+p {
+    font-size: 0.9em;
+    margin: 0.2em 0;
+}
+
+
+/* form */
+
+form caption {
+    text-align: left;
+    margin-bottom: 3.2em;
+
+    strong {
+        display:block;
+        font-weight: 700; 
+        text-shadow: 1px 2px #c6c6c6;
+        font-size: 1.8em;
+        margin-bottom: 0.25em;
+    }
+
+    caption p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* form - products */
+
+form.products table {
+    width: 100%;
+}
+
+form.products th:last-child {
+    text-align: right;
+    padding-right: 0.5em
+}
+
+form.products table td.quantity{
+    min-width: 3.2em;
+    padding-left: 0.5em;
+}
+
+form.products table td.cost{
+    text-align: right;
+}
+form.products input[type='number'] {
+    font-family: inherit;
+    width: 1.6em;
+    text-align: right;
+    padding: 0.2em 0.1em;
+}
+
+form.products input[type='number'] {
+    border: 1px solid #999;
+}
+
+form.products input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form.products a.delete {
+    text-decoration: none;
+    position: absolute;
+    margin-left: 2em;
+    left: 100%;
+    top: 0%;
+    display: block;
+    background:url('../img/bin.png') transparent no-repeat;
+    height:22px;
+    width:16px;
+
+}
+
+form label {
+    display: block;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+form input[type='submit'] {
+    margin-top: 1em;
+}
+
+/* table */
+
+table th,
+table td {
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+
+table td {
+    padding-top: 0.525em;
+    padding-bottom: 0.525em;
+}
+
+table tbody.totals td {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    padding-left: 0.5em;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    padding-left: 0.5em;
+}
+
+table th:last-child,
+table td:last-child {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table th {
+    border: 0px solid #787878;
+    border-bottom-width: 2px;
+    text-align: left;
+}
+
+/*
+    table - striped
+*/
+
+table.striped tbody::before
+{
+  content: '';
+  display: block;
+  height: 0.875em;
+}
+
+table.striped tbody::after
+{
+  content: '';
+  display: block;
+  height: 1.25em;
+}
+
+table.striped tr:nth-child(2n) td {
+    background-color: #dddddd;
+}
+
+table.striped tr.subtotal td,
+table.striped tr.total td {
+    color: #666;
+}
+
+table.striped tr.subtotal td,
+table.striped tr.total td {
+    background: none;
+}
+
+table.striped tr.total td {
+    padding-top: 1.25em;
+    color: #000;
+}
+
+table.striped tbody.totals td.price {
+    text-align: right;
+}
+
+
+/* rockers */
+
+input[type=number] {
+    float: left;
+}
+
+input[type=number] + .rocker { 
+    -webkit-appearance: none;
+    float: left;
+    margin-left: 0.4em;
+    cursor:pointer;
+    display:block;
+    width:0.5em;
+    color: #333;
+    text-align:center;
+    position:relative;
+}
+
+input[type=number] + .rocker a {
+    position:absolute;
+    right: 0;
+    padding: 0 0.2em;
+    font-size: 0.9em;
+    font-family: monospace;
+    line-height: 1.1em;
+    text-decoration: none;
+    background: #999;
+    color: #fff;
+    outline: red dotted 1px inherit
+}
+
+input[type=number] + .rocker a:focus {
+    background: #000;
+
+}
+
+input[type=number] + .rocker a.plus {
+    top: 0;
+}
+
+input[type=number] + .rocker a.minus {
+    top: 1.2em;
+}
+
+
+/* buttons */
+    
+
+input[type=submit].submit {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1.2em;
+    border: 0;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 3px 3px 3px #6e6e6e;
+    box-shadow: 3px 3px 3px #6e6e6e;
+    padding: 0.5em;
+}
+
+.submit {
+    color: #fff;
+    background: #000066;
+}
+
+
+/* footer */
+
+footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    min-height:2.8em;
+    width:100%;
+    background: #666;
+    color: #fff;
+    border-top: 1px solid #000;
+    padding-top: 0.7em
+}
+
+
+/* utils */
+
+.relative {
+    position: relative;
+}
+
+.right-align {
+    text-align: right
+}
+.right {
+    float: right;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 20em) {
+    body {
+        font-size: 0.8em;
+    }
+
+    form.products table td.quantity{
+        padding-left: 0.5em;
+    } 
+
+    footer .grid div:first-child {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 21em) and (max-width: 50em) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+    body {
+        font-size: 1em;
+    }
+}
+
+
+
+
