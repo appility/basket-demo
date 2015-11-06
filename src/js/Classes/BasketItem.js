@@ -27,7 +27,6 @@ App.BasketItem.prototype = ( function () {
 	}
 
 	function setQuantity (int) {
-		debugger;
 		if ( int > 0 && int < 11 ) {
 			this.quantity = int;
 		}
