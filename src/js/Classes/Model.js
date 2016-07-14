@@ -18,7 +18,7 @@ App.Model.prototype = ( function () {
 			req = new ActiveXObject('Microsoft.XMLHTTP');
 		}
 		req.overrideMimeType('application/json');
-		req.open('GET', url, false);
+		req.open('GET', url, true);
 		req.onload = function () {
 			target.saveComplete(req, url);
 		};
